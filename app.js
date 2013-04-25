@@ -267,7 +267,7 @@ function oauthSuccess(req, res, next) {
 
     });
 }
-
+	
 //
 // processRequest - handles API call
 //
@@ -284,10 +284,10 @@ function processRequest(req, res, next) {
         httpMethod = reqQuery.httpMethod,
         apiKey = reqQuery.apiKey,
         apiSecret = reqQuery.apiSecret,
-        apiName = reqQuery.apiName
+        apiName = reqQuery.apiName,
         apiConfig = apisConfig[apiName],
         key = req.sessionID + ':' + apiName;
-
+	
     // Extract custom headers from the params
     for( var param in params ) 
     {
@@ -319,7 +319,13 @@ function processRequest(req, res, next) {
         }
     }
 
-    var baseHostInfo = apiConfig.baseURL.split(':');
+	var protocol = reqQuery.apiProtocol || apiConfig.protocol
+	var baseURLString = reqQuery.apiBasePath || apiConfig.baseURL
+	var baseURLInfo = baseURLString.split('/');
+	var baseURL = baseURLInfo[0];
+	var basePath = (baseURLInfo.length > 1) ? "/" + baseURLInfo[1] : "";
+	
+    var baseHostInfo = baseURL.split(':');
     var baseHostUrl = baseHostInfo[0],
         baseHostPort = (baseHostInfo.length > 1) ? baseHostInfo[1] : "";
     var headers = {};
@@ -329,16 +335,16 @@ function processRequest(req, res, next) {
         headers[header] = customHeaders[header];
 
     var paramString = query.stringify(params),
-        privateReqURL = apiConfig.protocol + '://' + apiConfig.baseURL + apiConfig.privatePath + methodURL + ((paramString.length > 0) ? '?' + paramString : ""),
+        privateReqURL = protocol + '://' + baseURL + apiConfig.privatePath + methodURL + ((paramString.length > 0) ? '?' + paramString : ""),
         options = {
             headers: headers,
-            protocol: apiConfig.protocol + ':',
+            protocol: protocol + ':',
             host: baseHostUrl,
             port: baseHostPort,
             method: httpMethod,
-            path: apiConfig.publicPath + methodURL// + ((paramString.length > 0) ? '?' + paramString : "")
+            path: basePath + apiConfig.publicPath + methodURL// + ((paramString.length > 0) ? '?' + paramString : "")
         };
-
+		
     if (['POST','DELETE','PUT'].indexOf(httpMethod) !== -1) {
         var requestBody = query.stringify(params);
     }

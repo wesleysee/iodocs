@@ -161,6 +161,17 @@
             }
         })
     });
+	
+	var protocol, basePath;
+	
+	$('#http').submit(function(event) {
+		event.preventDefault();
+
+		var params = $(this).serializeArray();
+
+		protocol = params[0].value;
+		basePath = params[1].value;
+	});
 
     /*
         Try it! button. Submits the method params, apikey and secret if any, and apiName
@@ -173,9 +184,11 @@
         var params = $(this).serializeArray(),
             apiKey = { name: 'apiKey', value: $('input[name=key]').val() },
             apiSecret = { name: 'apiSecret', value: $('input[name=secret]').val() },
-            apiName = { name: 'apiName', value: $('input[name=apiName]').val() };
+            apiName = { name: 'apiName', value: $('input[name=apiName]').val() },
+			apiProtocol = { name: 'apiProtocol', value: protocol }
+			apiBasePath = { name: 'apiBasePath', value: basePath };
 
-        params.push(apiKey, apiSecret, apiName);
+        params.push(apiKey, apiSecret, apiName, apiProtocol, apiBasePath);
 
         // Setup results container
         var resultContainer = $('.result', self);
@@ -236,7 +249,7 @@
         console.log(params);
 
         $.post('/processReq', params, function(result, text) {
-            // If we get passed a signin property, open a window to allow the user to signin/link their account
+			// If we get passed a signin property, open a window to allow the user to signin/link their account
             if (result.signin) {
                 window.open(result.signin,"_blank","height=900,width=800,menubar=0,resizable=1,scrollbars=1,status=0,titlebar=0,toolbar=0");
             } else {
@@ -244,10 +257,10 @@
                     responseContentType = result.headers['content-type'];
                 // Format output according to content-type
                 response = livedocs.formatData(result.response, result.headers['content-type'])
-
+				
                 $('pre.response', resultContainer)
                     .toggleClass('error', false)
-                    .text(response);
+                    .text(formatJSON(JSON.parse(response)));
             }
 
         })

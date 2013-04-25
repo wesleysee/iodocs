@@ -42,6 +42,13 @@ form#credentials
 div(id='controls')
     ul
         li
+            form#http
+                select(name='protocol')
+                    option(value='http', selected=true) HTTP
+                    option(value='https') HTTPS
+                input(name='urlPath', value=apiInfo.baseURL, style='margin-left: 15px; width: 350px')
+                input(name='path', value='Set Path', type='submit', id='http-path', style='margin-left: 15px; margin-right: 50px')
+        li
             a#toggle-endpoints(href='#') Toggle All Endpoints
         li
             a#toggle-methods(href='#') Toggle All Methods
@@ -84,7 +91,6 @@ ul
                                             th Parameter
                                             th Value
                                             th Type
-                                            th Location
                                             th Description
                                     tbody
                                         - var paramCount =0
@@ -122,8 +128,28 @@ ul
                                                           input(name='params[' + parameter.Name + ']', value=parameter.Default, placeholder=className)
                                                           input(type='hidden', name='locations['+parameter.Name+']', value=parameter.Location || 'query')
                                                   td.type=parameter.Type
-                                                  td.location
-                                                      p=parameter.Location || 'query'
+                                                  td.description
+                                                      p=parameter.Description || 'No description'
+                                                      - if (parameter.Type =='enumerated' && parameter.EnumeratedDescription)
+                                                          dl.clearfix
+                                                              - each description, choice in parameter.EnumeratedDescription
+                                                                  dt #{choice}
+                                                                  dd #{description}
+                            - if (method.responses.length > 0)
+                                table.responses
+                                    thead
+                                        tr
+                                            th Response
+                                            th Type
+                                            th Description
+                                    tbody
+                                        - var paramCount =0
+                                        - each parameter in method.responses
+                                            - paramCount++
+                                            div(id='response' + paramCount)
+                                              tr
+                                                  td.name=parameter.Name
+                                                  td.type=parameter.Type
                                                   td.description
                                                       p=parameter.Description || 'No description'
                                                       - if (parameter.Type =='enumerated' && parameter.EnumeratedDescription)
