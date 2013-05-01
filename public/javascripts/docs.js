@@ -172,6 +172,34 @@
 		protocol = params[0].value;
 		basePath = params[1].value;
 	});
+    
+    $('#hoiioCred').submit(function(event) {
+		event.preventDefault();
+
+		var params = $(this).serializeArray();
+
+		mobileNum = params[0].value;
+		password = params[1].value;
+        orgId = params[2].value;
+        
+        if (mobileNum != '') {
+            $('input[name="params[mobileNum]"]').each(function(){
+                $(this).val(mobileNum)
+            });
+        }
+        
+        if (password != '') {
+            $('input[name="params[password]"]').each(function(){
+                $(this).val(password)
+            });
+        }
+        
+        if (orgId != '') {
+            $('input[name="params[orgId]"]').each(function(){
+                $(this).val(orgId)
+            });
+        }
+	});
 
     /*
         Try it! button. Submits the method params, apikey and secret if any, and apiName

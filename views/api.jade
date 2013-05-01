@@ -53,6 +53,15 @@ div(id='controls')
         li
             a#toggle-methods(href='#') Toggle All Methods
 
+br
+div
+    form#hoiioCred        
+        input(name='mobileNum', style='margin-left: 15px; width: 200px', placeholder='mobileNum')
+        input(name='password', style='margin-left: 15px; width: 200px', placeholder='password')
+        input(name='orgId', style='margin-left: 15px; width: 200px', placeholder='orgId')
+        input(name='Set', value='Set', type='submit', style='margin-left: 15px')
+br
+
 ul
     - each endpoint in apiDefinition.endpoints
         li.endpoint
@@ -157,6 +166,28 @@ ul
                                                               - each description, choice in parameter.EnumeratedDescription
                                                                   dt #{choice}
                                                                   dd #{description}
+                                                      - else if (parameter.Type == 'nested' && parameter.Nested)
+                                                          table
+                                                              tbody
+                                                                  - each nested in parameter.Nested
+                                                                      tr
+                                                                          td #{nested.Name}
+                                                                          td #{nested.Type} 
+                                                                          td #{nested.Description} 																	  
+                            - if (method.errorCodes.length > 0)
+                                table.errorCodes
+                                    thead
+                                        tr
+                                            th Error Code
+                                            th Description
+                                    tbody
+                                        - var paramCount =0
+                                        - each parameter in method.errorCodes
+                                            - paramCount++
+                                            div(id='response' + paramCount)
+                                              tr
+                                                  td.name=parameter.Name
+                                                  td.description
                             - if (method.headers && method.headers.length > 0)
                                 div.headers
                                     h4.title

@@ -117,18 +117,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "txnId",
         "Type": "string",
         "Description": ""
@@ -139,6 +127,55 @@
       }, {
         "Name": "totalCostDetail",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "paymentGatewayNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "paymentModeNotSupported",
+        "Description": ""
+      }, {
+        "Name": "pricingTierNotValid",
+        "Description": ""
+      }, {
+        "Name": "subscriptionAlreadyExists",
+        "Description": ""
+      }, {
+        "Name": "pendingSubscriptionTxnExists",
+        "Description": ""
+      }, {
+        "Name": "serviceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "subscribeNumberServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "noNumbersAvailable",
+        "Description": ""
+      }, {
+        "Name": "numberNotAssignedToUser",
+        "Description": ""
+      }, {
+        "Name": "paymentNotSuccess",
+        "Description": ""
+      }, {
+        "Name": "paymentNotSuccessCustom",
+        "Description": ""
+      }, {
+        "Name": "insufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "numberMissing",
+        "Description": ""
+      }, {
+        "Name": "serviceCodesInvalid",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }]
@@ -194,18 +231,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "countryCode",
         "Type": "string",
         "Description": ""
@@ -249,7 +274,8 @@
         "Name": "timezone",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }]
   }, {
     "name": "public/core/chat/",
@@ -315,18 +341,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "version",
         "Type": "string",
         "Description": ""
@@ -349,6 +363,19 @@
       }, {
         "Name": "failedRecipients",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "noRecipient",
+        "Description": ""
+      }, {
+        "Name": "invalidRoom",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "invalidAttachment",
         "Description": ""
       }]
     }, {
@@ -413,18 +440,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "version",
         "Type": "string",
         "Description": ""
@@ -447,6 +462,22 @@
       }, {
         "Name": "failedRecipients",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "noRecipient",
+        "Description": ""
+      }, {
+        "Name": "invalidRoom",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "invalidAttachment",
+        "Description": ""
+      }, {
+        "Name": "roomAlreadyExists",
         "Description": ""
       }]
     }, {
@@ -493,20 +524,12 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "key",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -553,20 +576,12 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "channel",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -618,18 +633,10 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
       }]
     }, {
       "MethodName": "read",
@@ -687,18 +694,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "readStatus_i",
         "Type": "string",
         "Description": ""
@@ -709,6 +704,13 @@
       }, {
         "Name": "readErrorCode_i",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "malformedJSON",
         "Description": ""
       }]
     }, {
@@ -754,19 +756,8 @@
         "Type": "string",
         "Description": "IP Address"
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }]
+      "responses": [],
+      "errorCodes": []
     }, {
       "MethodName": "invite",
       "Synopsis": "",
@@ -816,18 +807,16 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "noMoreInvites",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "serviceNotAvailable",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "inviteeCountryNotAllowed",
+        "Description": ""
       }]
     }]
   }, {
@@ -900,20 +889,18 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "history",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "invalidRoom",
+        "Description": ""
+      }, {
+        "Name": "historySizeTooLarge",
         "Description": ""
       }]
     }, {
@@ -978,20 +965,18 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "history",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "invalidRoom",
+        "Description": ""
+      }, {
+        "Name": "historySizeTooLarge",
         "Description": ""
       }]
     }, {
@@ -1056,20 +1041,15 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "count",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "invalidRoom",
         "Description": ""
       }]
     }, {
@@ -1122,24 +1102,16 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "latestVersion",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "rooms",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -1192,20 +1164,15 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "room",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "invalidRoom",
         "Description": ""
       }]
     }]
@@ -1297,18 +1264,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contactAddStatus_i",
         "Type": "string",
         "Description": ""
@@ -1331,6 +1286,52 @@
       }, {
         "Name": "contacts",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "internalServerError",
+        "Description": ""
+      }, {
+        "Name": "fullNameEmpty",
+        "Description": ""
+      }, {
+        "Name": "noContactProvided",
+        "Description": ""
+      }, {
+        "Name": "invalidVersion",
+        "Description": ""
+      }, {
+        "Name": "emptyContactFields",
+        "Description": ""
+      }, {
+        "Name": "missingDescription",
+        "Description": ""
+      }, {
+        "Name": "missingValue",
+        "Description": ""
+      }, {
+        "Name": "photoNotReadable",
+        "Description": ""
+      }, {
+        "Name": "missingVCard",
+        "Description": ""
+      }, {
+        "Name": "malformedVCard",
+        "Description": ""
+      }, {
+        "Name": "missingContactId",
+        "Description": ""
+      }, {
+        "Name": "missingDeviceId",
+        "Description": ""
+      }, {
+        "Name": "contactIrrelevant",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "invalidDeviceId",
         "Description": ""
       }]
     }, {
@@ -1401,18 +1402,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "linkStatus",
         "Type": "string",
         "Description": ""
@@ -1431,6 +1420,31 @@
       }, {
         "Name": "contacts",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "internalServerError",
+        "Description": ""
+      }, {
+        "Name": "invalidVersion",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "photoNotReadable",
+        "Description": ""
+      }, {
+        "Name": "missingVCard",
+        "Description": ""
+      }, {
+        "Name": "malformedVCard",
+        "Description": ""
+      }, {
+        "Name": "missingContactId",
+        "Description": ""
+      }, {
+        "Name": "missingDeviceId",
         "Description": ""
       }]
     }, {
@@ -1507,18 +1521,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contactDeleteErrorMsg_i",
         "Type": "string",
         "Description": ""
@@ -1533,6 +1535,34 @@
       }, {
         "Name": "latestVersion",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "contactPhoneNumberInvalid",
+        "Description": ""
+      }, {
+        "Name": "internalServerError",
+        "Description": ""
+      }, {
+        "Name": "cannotFindContact",
+        "Description": ""
+      }, {
+        "Name": "missingContactIdentifier",
+        "Description": ""
+      }, {
+        "Name": "contactNotExists",
+        "Description": ""
+      }, {
+        "Name": "noContactProvided",
+        "Description": ""
+      }, {
+        "Name": "invalidDate",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "invalidVersion",
         "Description": ""
       }]
     }, {
@@ -1615,18 +1645,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contacts",
         "Type": "string",
         "Description": ""
@@ -1649,6 +1667,67 @@
       }, {
         "Name": "numOfContactsEdited",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "oldContactPhoneNumberInvalid",
+        "Description": ""
+      }, {
+        "Name": "newContactIsEmpty",
+        "Description": ""
+      }, {
+        "Name": "contactPhoneNumberInvalid",
+        "Description": ""
+      }, {
+        "Name": "fullNameEmpty",
+        "Description": ""
+      }, {
+        "Name": "contactDoesNotExist",
+        "Description": ""
+      }, {
+        "Name": "noContactProvided",
+        "Description": ""
+      }, {
+        "Name": "typeInvalid",
+        "Description": ""
+      }, {
+        "Name": "internalServerError",
+        "Description": ""
+      }, {
+        "Name": "cannotFindContact",
+        "Description": ""
+      }, {
+        "Name": "missingContactIdentifier",
+        "Description": ""
+      }, {
+        "Name": "noResult",
+        "Description": ""
+      }, {
+        "Name": "invalidVersion",
+        "Description": ""
+      }, {
+        "Name": "noOperationProvided",
+        "Description": ""
+      }, {
+        "Name": "errorOccurred",
+        "Description": ""
+      }, {
+        "Name": "photoNotReadable",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "missingVCard",
+        "Description": ""
+      }, {
+        "Name": "malformedVCard",
+        "Description": ""
+      }, {
+        "Name": "missingContactId",
+        "Description": ""
+      }, {
+        "Name": "missingDeviceId",
         "Description": ""
       }]
     }, {
@@ -1731,24 +1810,22 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contacts",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "latestVersion",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "internalServerError",
+        "Description": ""
+      }, {
+        "Name": "invalidVersion",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -1801,20 +1878,15 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contact",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "contactNotFound",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -1879,24 +1951,25 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "mergedContact",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "latestVersion",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "contactDoesNotExist",
+        "Description": ""
+      }, {
+        "Name": "internalServerError",
+        "Description": ""
+      }, {
+        "Name": "ivalidDate",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -1943,20 +2016,21 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "latestVersion",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "noPhoto",
+        "Description": ""
+      }, {
+        "Name": "photoNotReadable",
+        "Description": ""
+      }, {
+        "Name": "contactDoesNotExist",
         "Description": ""
       }]
     }, {
@@ -2009,20 +2083,15 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "duplicates",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "contactDoesNotExist",
         "Description": ""
       }]
     }, {
@@ -2075,20 +2144,18 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "latestVersion",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userInGroups",
+        "Description": ""
+      }, {
+        "Name": "internalServerError",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -2129,22 +2196,11 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contact",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "getDetails",
       "Synopsis": "",
@@ -2195,18 +2251,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contacts",
         "Type": "string",
         "Description": ""
@@ -2253,6 +2297,10 @@
       }, {
         "Name": "number",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
         "Description": ""
       }]
     }]
@@ -2344,24 +2392,46 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "rate",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "txnRef",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "serviceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "destinationNotSupported",
+        "Description": ""
+      }, {
+        "Name": "destinationInvalid",
+        "Description": ""
+      }, {
+        "Name": "insufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "cannotSendFax",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallDurationNotEnough",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallLimitReached",
+        "Description": ""
+      }, {
+        "Name": "callerIDInvalid",
+        "Description": ""
+      }, {
+        "Name": "faxHeaderInvalid",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }]
@@ -2423,24 +2493,16 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "latestVersion",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "id",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -2499,18 +2561,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "latestVersion",
         "Type": "string",
         "Description": ""
@@ -2557,6 +2607,13 @@
       }, {
         "Name": "deleted",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "invalidVersion",
         "Description": ""
       }]
     }, {
@@ -2633,18 +2690,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "invalidUsers",
         "Type": "string",
         "Description": ""
@@ -2728,6 +2773,31 @@
         "Name": "numShareListErrorCode_i",
         "Type": "string",
         "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "shareToEmpty",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "userInList",
+        "Description": ""
+      }, {
+        "Name": "userNotOwner",
+        "Description": ""
+      }, {
+        "Name": "listNotFound",
+        "Description": ""
+      }, {
+        "Name": "numberNotValid",
+        "Description": ""
+      }, {
+        "Name": "contactNotFound",
+        "Description": ""
+      }, {
+        "Name": "contactNotLive",
+        "Description": ""
       }]
     }, {
       "MethodName": "edit",
@@ -2790,18 +2860,16 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "userNotOwner",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "userNotLive",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "listNotFound",
+        "Description": ""
       }]
     }, {
       "MethodName": "delete",
@@ -2852,18 +2920,16 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "listNotFound",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "userNotOwner",
+        "Description": ""
       }]
     }, {
       "MethodName": "import",
@@ -2915,18 +2981,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contactDeleteStatus_i",
         "Type": "string",
         "Description": ""
@@ -2937,6 +2991,19 @@
       }, {
         "Name": "contactDeleteErrorCode_i",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "listNotFound",
+        "Description": ""
+      }, {
+        "Name": "userNotInList",
+        "Description": ""
+      }, {
+        "Name": "contactNotFound",
         "Description": ""
       }]
     }, {
@@ -3001,18 +3068,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "invalidUsers",
         "Type": "string",
         "Description": ""
@@ -3055,6 +3110,31 @@
       }, {
         "Name": "userUnshareErrorCode_i",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "unshareFromEmpty",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "userNotInList",
+        "Description": ""
+      }, {
+        "Name": "listNotFound",
+        "Description": ""
+      }, {
+        "Name": "contactNotFound",
+        "Description": ""
+      }, {
+        "Name": "contactNotLive",
+        "Description": ""
+      }, {
+        "Name": "userNotOwner",
+        "Description": ""
+      }, {
+        "Name": "cannotModifyOwner",
         "Description": ""
       }]
     }]
@@ -3116,18 +3196,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contactAddStatus_i",
         "Type": "string",
         "Description": ""
@@ -3138,6 +3206,28 @@
       }, {
         "Name": "contactAddErrorCode_i",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "listNotFound",
+        "Description": ""
+      }, {
+        "Name": "userNotAllowedToModify",
+        "Description": ""
+      }, {
+        "Name": "photoNotReadable",
+        "Description": ""
+      }, {
+        "Name": "noContactsProvided",
+        "Description": ""
+      }, {
+        "Name": "vcardMissing",
+        "Description": ""
+      }, {
+        "Name": "vcardReadError",
         "Description": ""
       }]
     }, {
@@ -3202,18 +3292,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contactDeleteStatus_i",
         "Type": "string",
         "Description": ""
@@ -3224,6 +3302,25 @@
       }, {
         "Name": "contactDeleteErrorCode_i",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "listNotFound",
+        "Description": ""
+      }, {
+        "Name": "userNotAllowedToModify",
+        "Description": ""
+      }, {
+        "Name": "noContactsProvided",
+        "Description": ""
+      }, {
+        "Name": "missingContactId",
+        "Description": ""
+      }, {
+        "Name": "contactNotFound",
         "Description": ""
       }]
     }, {
@@ -3282,18 +3379,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contactEditStatus_i",
         "Type": "string",
         "Description": ""
@@ -3304,6 +3389,31 @@
       }, {
         "Name": "contactEditErrorCode_i",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "listNotFound",
+        "Description": ""
+      }, {
+        "Name": "userNotAllowedToModify",
+        "Description": ""
+      }, {
+        "Name": "photoNotReadable",
+        "Description": ""
+      }, {
+        "Name": "noContactsProvided",
+        "Description": ""
+      }, {
+        "Name": "vcardMissing",
+        "Description": ""
+      }, {
+        "Name": "vcardReadError",
+        "Description": ""
+      }, {
+        "Name": "contactIdMissing",
         "Description": ""
       }]
     }, {
@@ -3362,18 +3472,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contactDeleteStatus_i",
         "Type": "string",
         "Description": ""
@@ -3384,6 +3482,25 @@
       }, {
         "Name": "contactDeleteErrorCode_i",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "listNotFound",
+        "Description": ""
+      }, {
+        "Name": "userNotInList",
+        "Description": ""
+      }, {
+        "Name": "noContactsProvided",
+        "Description": ""
+      }, {
+        "Name": "missingContactId",
+        "Description": ""
+      }, {
+        "Name": "contactNotFound",
         "Description": ""
       }]
     }]
@@ -3451,18 +3568,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "invalidUsers",
         "Type": "string",
         "Description": ""
@@ -3505,6 +3610,31 @@
       }, {
         "Name": "userRemoveWriteErrorCode_i",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "removeWriteFromEmpty",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "userNotInList",
+        "Description": ""
+      }, {
+        "Name": "listNotFound",
+        "Description": ""
+      }, {
+        "Name": "contactNotFound",
+        "Description": ""
+      }, {
+        "Name": "contactNotLive",
+        "Description": ""
+      }, {
+        "Name": "userNotOwner",
+        "Description": ""
+      }, {
+        "Name": "cannotModifyOwner",
         "Description": ""
       }]
     }, {
@@ -3569,18 +3699,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "invalidUsers",
         "Type": "string",
         "Description": ""
@@ -3623,6 +3741,31 @@
       }, {
         "Name": "userAllowWriteErrorCode_i",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "allowWriteToEmpty",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
+        "Description": ""
+      }, {
+        "Name": "userNotInList",
+        "Description": ""
+      }, {
+        "Name": "listNotFound",
+        "Description": ""
+      }, {
+        "Name": "contactNotFound",
+        "Description": ""
+      }, {
+        "Name": "contactNotLive",
+        "Description": ""
+      }, {
+        "Name": "userNotOwner",
+        "Description": ""
+      }, {
+        "Name": "cannotModifyOwner",
         "Description": ""
       }]
     }]
@@ -3714,20 +3857,30 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "photos",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNoLiveProfile",
+        "Description": ""
+      }, {
+        "Name": "actionNotAllowed",
+        "Description": ""
+      }, {
+        "Name": "typeNotAllowed",
+        "Description": ""
+      }, {
+        "Name": "fieldEditNotAllowed",
+        "Description": ""
+      }, {
+        "Name": "mustHaveOneVerifiedNum",
+        "Description": ""
+      }, {
+        "Name": "fieldDoesNotExist",
+        "Description": ""
+      }, {
+        "Name": "photoNotReadable",
         "Description": ""
       }]
     }, {
@@ -3827,18 +3980,10 @@
         "Type": "boolean",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "userAlreadyActivated",
+        "Description": ""
       }]
     }, {
       "MethodName": "deactivate",
@@ -3889,18 +4034,13 @@
         "Type": "boolean",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "userNoLiveProfile",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "userIsGroupOwner",
+        "Description": ""
       }]
     }, {
       "MethodName": "get",
@@ -3951,18 +4091,10 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "userNoLiveProfile",
+        "Description": ""
       }]
     }]
   }, {
@@ -4016,18 +4148,10 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "numberNotFound",
+        "Description": ""
       }]
     }, {
       "MethodName": "update",
@@ -4085,20 +4209,33 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "token",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "cannotSendSms",
+        "Description": ""
+      }, {
+        "Name": "retriesExceeded",
+        "Description": ""
+      }, {
+        "Name": "numberInUse",
+        "Description": ""
+      }, {
+        "Name": "oldNumberNotAuthorized",
+        "Description": ""
+      }, {
+        "Name": "numberInvalid",
+        "Description": ""
+      }, {
+        "Name": "numberToAdd",
+        "Description": ""
+      }, {
+        "Name": "maxAuthNumReached",
+        "Description": ""
+      }, {
+        "Name": "maxAttemptsReached",
         "Description": ""
       }]
     }, {
@@ -4151,20 +4288,30 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "token",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "cannotSendSms",
+        "Description": ""
+      }, {
+        "Name": "retriesExceeded",
+        "Description": ""
+      }, {
+        "Name": "numberInUse",
+        "Description": ""
+      }, {
+        "Name": "numberInvalid",
+        "Description": ""
+      }, {
+        "Name": "numberToAdd",
+        "Description": ""
+      }, {
+        "Name": "maxAuthNumReached",
+        "Description": ""
+      }, {
+        "Name": "maxAttemptsReached",
         "Description": ""
       }]
     }, {
@@ -4211,18 +4358,6 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "authNum",
         "Type": "string",
         "Description": ""
@@ -4234,7 +4369,8 @@
         "Name": "status",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "remove",
       "Synopsis": "",
@@ -4290,18 +4426,13 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "numberNotFound",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "cannotDeleteLastNum",
+        "Description": ""
       }]
     }, {
       "MethodName": "send",
@@ -4359,20 +4490,21 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "token",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "cannotSendSms",
+        "Description": ""
+      }, {
+        "Name": "sendNumberInvalid",
+        "Description": ""
+      }, {
+        "Name": "retriesExceeded",
+        "Description": ""
+      }, {
+        "Name": "invalidSendCodeMediumType",
         "Description": ""
       }]
     }, {
@@ -4448,18 +4580,22 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "tokenInvalid",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "incorrectCode",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "retriesExceeded",
+        "Description": ""
+      }, {
+        "Name": "tokenExpired",
+        "Description": ""
+      }, {
+        "Name": "numberNotFound",
+        "Description": ""
       }]
     }]
   }, {
@@ -4513,18 +4649,16 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "emailInvalidFormat",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "emailAlreadyVerified",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "emailNotOfUser",
+        "Description": ""
       }]
     }]
   }, {
@@ -4596,18 +4730,13 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "osNotSupported",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "userNoLiveProfile",
+        "Description": ""
       }]
     }, {
       "MethodName": "delete",
@@ -4670,18 +4799,13 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "osNotSupported",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "userNoLiveProfile",
+        "Description": ""
       }]
     }, {
       "MethodName": "update",
@@ -4762,18 +4886,13 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "osNotSupported",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "userNoLiveProfile",
+        "Description": ""
       }]
     }]
   }, {
@@ -4827,18 +4946,10 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "userNotActivated",
+        "Description": ""
       }]
     }]
   }, {
@@ -4923,18 +5034,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "notifications",
         "Type": "string",
         "Description": ""
@@ -5010,6 +5109,13 @@
         "Name": "state",
         "Type": "string",
         "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
       }]
     }, {
       "MethodName": "getUnreadCount",
@@ -5055,22 +5161,11 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "count",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "read",
       "Synopsis": "",
@@ -5120,19 +5215,8 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }]
+      "responses": [],
+      "errorCodes": []
     }, {
       "MethodName": "readAll",
       "Synopsis": "",
@@ -5176,19 +5260,8 @@
         "Type": "string",
         "Description": "IP Address"
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }]
+      "responses": [],
+      "errorCodes": []
     }]
   }, {
     "name": "public/core/organization/",
@@ -5230,20 +5303,21 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "organization",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "tokenAlreadyVerified",
+        "Description": ""
+      }, {
+        "Name": "tokenNotFound",
+        "Description": ""
+      }, {
+        "Name": "tokenExpired",
         "Description": ""
       }]
     }, {
@@ -5296,22 +5370,11 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "organizations",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "update",
       "Synopsis": "",
@@ -5386,20 +5449,39 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "organization",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNoLiveProfile",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "photoNotReadable",
+        "Description": ""
+      }, {
+        "Name": "fieldDoesNotExist",
+        "Description": ""
+      }, {
+        "Name": "mustHaveOneVerifiedNum",
+        "Description": ""
+      }, {
+        "Name": "fieldEditNotAllowed",
+        "Description": ""
+      }, {
+        "Name": "typeNotAllowed",
+        "Description": ""
+      }, {
+        "Name": "actionNotAllowed",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }, {
@@ -5470,20 +5552,18 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "organization",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "illegalOperation",
         "Description": ""
       }]
     }, {
@@ -5572,20 +5652,24 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "organization",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNoLiveProfile",
+        "Description": ""
+      }, {
+        "Name": "photoNotReadable",
+        "Description": ""
+      }, {
+        "Name": "emailDomainInvalid",
+        "Description": ""
+      }, {
+        "Name": "emailDomainInUse",
+        "Description": ""
+      }, {
+        "Name": "servicePackUnavailable",
         "Description": ""
       }]
     }, {
@@ -5643,18 +5727,19 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "organizationNotFound",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "organizationStillHasCredits",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "hasConcurrentTxn",
+        "Description": ""
       }]
     }, {
       "MethodName": "verify",
@@ -5712,20 +5797,21 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "organization",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "tokenAlreadyVerified",
+        "Description": ""
+      }, {
+        "Name": "tokenNotFound",
+        "Description": ""
+      }, {
+        "Name": "tokenExpired",
         "Description": ""
       }]
     }]
@@ -5787,20 +5873,18 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "members",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
         "Description": ""
       }]
     }, {
@@ -5883,20 +5967,30 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "member",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "memberAccountNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "memberAlreadyInOrganization",
+        "Description": ""
+      }, {
+        "Name": "userNotInOrganization",
+        "Description": ""
+      }, {
+        "Name": "roleNotFound",
         "Description": ""
       }]
     }, {
@@ -5960,18 +6054,31 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "memberAccountNotFound",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "organizationNotFound",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "memberAlreadyInOrganization",
+        "Description": ""
+      }, {
+        "Name": "userNotInOrganization",
+        "Description": ""
+      }, {
+        "Name": "roleNotFound",
+        "Description": ""
+      }, {
+        "Name": "illegalOperation",
+        "Description": ""
       }]
     }, {
       "MethodName": "leave",
@@ -6034,18 +6141,16 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "organizationNotFound",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "illegalOperation",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "organizationNotVerified",
+        "Description": ""
       }]
     }, {
       "MethodName": "add",
@@ -6115,20 +6220,27 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "member",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "memberAccountNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "memberAlreadyInOrganization",
+        "Description": ""
+      }, {
+        "Name": "roleNotFound",
         "Description": ""
       }]
     }, {
@@ -6199,24 +6311,28 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "member",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "organization",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "memberAlreadyInOrganization",
+        "Description": ""
+      }, {
+        "Name": "inviteNotFound",
+        "Description": ""
+      }, {
+        "Name": "emailAlreadyInUse",
         "Description": ""
       }]
     }, {
@@ -6275,20 +6391,18 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "member",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
         "Description": ""
       }]
     }]
@@ -6374,24 +6488,37 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "member",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "photos",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "memberAccountNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "memberAlreadyInOrganization",
+        "Description": ""
+      }, {
+        "Name": "roleNotFound",
+        "Description": ""
+      }, {
+        "Name": "sameInviteeLimitReached",
+        "Description": ""
+      }, {
+        "Name": "inviteeLimitReached",
         "Description": ""
       }]
     }, {
@@ -6450,18 +6577,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "invites",
         "Type": "string",
         "Description": ""
@@ -6488,6 +6603,16 @@
       }, {
         "Name": "joined",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
         "Description": ""
       }]
     }, {
@@ -6540,18 +6665,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "invite",
         "Type": "string",
         "Description": ""
@@ -6582,6 +6695,13 @@
       }, {
         "Name": "photos",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "inviteNotFound",
+        "Description": ""
+      }, {
+        "Name": "emailAlreadyInUse",
         "Description": ""
       }]
     }, {
@@ -6646,18 +6766,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "organizations",
         "Type": "string",
         "Description": ""
@@ -6676,6 +6784,19 @@
       }, {
         "Name": "photos",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "inviteNotFound",
         "Description": ""
       }]
     }]
@@ -6725,22 +6846,11 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "privileges",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }]
   }, {
     "name": "public/core/organization/roles/",
@@ -6800,20 +6910,18 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "roles",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
         "Description": ""
       }]
     }, {
@@ -6896,20 +7004,33 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "role",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "roleNotFound",
+        "Description": ""
+      }, {
+        "Name": "privilegeNotFound",
+        "Description": ""
+      }, {
+        "Name": "invalidRoleName",
+        "Description": ""
+      }, {
+        "Name": "roleNotDeletable",
+        "Description": ""
+      }, {
+        "Name": "roleNotUpdatable",
         "Description": ""
       }]
     }, {
@@ -6968,18 +7089,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "organizations",
         "Type": "string",
         "Description": ""
@@ -6998,6 +7107,16 @@
       }, {
         "Name": "photos",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationStillHasCredits",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }, {
@@ -7056,20 +7175,18 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "role",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
         "Description": ""
       }]
     }, {
@@ -7152,20 +7269,18 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "photos",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNoLiveProfile",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "photoNotReadable",
         "Description": ""
       }]
     }]
@@ -7220,18 +7335,16 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "paymentGatewayNotAvailable",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "paymentModeNotSupported",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "paymentNotSuccess",
+        "Description": ""
       }]
     }, {
       "MethodName": "getPaymentData",
@@ -7277,18 +7390,6 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "paymentData",
         "Type": "string",
         "Description": ""
@@ -7303,6 +7404,10 @@
       }, {
         "Name": "displayData",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "noStoredPaymentData",
         "Description": ""
       }]
     }, {
@@ -7354,18 +7459,10 @@
         "Type": "int",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "paymentDataNotFound",
+        "Description": ""
       }]
     }]
   }, {
@@ -7420,18 +7517,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "token",
         "Type": "string",
         "Description": ""
@@ -7442,6 +7527,31 @@
       }, {
         "Name": "retriesLeft",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "registrationNotAllowed",
+        "Description": ""
+      }, {
+        "Name": "phoneNumInvalid",
+        "Description": ""
+      }, {
+        "Name": "numberAlreadyRegistered",
+        "Description": ""
+      }, {
+        "Name": "retriesExceeded",
+        "Description": ""
+      }, {
+        "Name": "registrationNotAllowedForNumber",
+        "Description": ""
+      }, {
+        "Name": "cannotSendSms",
+        "Description": ""
+      }, {
+        "Name": "countryClosedForRegistration",
+        "Description": ""
+      }, {
+        "Name": "callFailed",
         "Description": ""
       }]
     }, {
@@ -7493,18 +7603,25 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "tokenInvalid",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "tokenClaimed",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "incorrectCode",
+        "Description": ""
+      }, {
+        "Name": "retriesExceeded",
+        "Description": ""
+      }, {
+        "Name": "tokenExpired",
+        "Description": ""
+      }, {
+        "Name": "numberAlreadyRegistered",
+        "Description": ""
       }]
     }, {
       "MethodName": "enterDetails",
@@ -7621,18 +7738,70 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "passwordInvalid",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "passwordLengthTooShort",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "passwordLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "passwordIsEmpty",
+        "Description": ""
+      }, {
+        "Name": "emailAddressInvalid",
+        "Description": ""
+      }, {
+        "Name": "fullNameInvalid",
+        "Description": ""
+      }, {
+        "Name": "fullNameEmpty",
+        "Description": ""
+      }, {
+        "Name": "fullNameContainsInvalidChar",
+        "Description": ""
+      }, {
+        "Name": "fullNameLenTooLong",
+        "Description": ""
+      }, {
+        "Name": "addressLineOneLenTooLong",
+        "Description": ""
+      }, {
+        "Name": "addressLineTwoLenTooLong",
+        "Description": ""
+      }, {
+        "Name": "cityLenTooLong",
+        "Description": ""
+      }, {
+        "Name": "stateLenTooLong",
+        "Description": ""
+      }, {
+        "Name": "zipLenTooLong",
+        "Description": ""
+      }, {
+        "Name": "failedToCreateUserException",
+        "Description": ""
+      }, {
+        "Name": "tokenInvalid",
+        "Description": ""
+      }, {
+        "Name": "tokenExpired",
+        "Description": ""
+      }, {
+        "Name": "tokenUnverified",
+        "Description": ""
+      }, {
+        "Name": "registrationNotAllowed",
+        "Description": ""
+      }, {
+        "Name": "registrationNotAllowedForNumber",
+        "Description": ""
+      }, {
+        "Name": "numberAlreadyRegistered",
+        "Description": ""
       }]
     }, {
       "MethodName": "updateUserAntiAbuse",
@@ -7683,18 +7852,10 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "errorInvalidConcurrentCallLimit",
+        "Description": ""
       }]
     }, {
       "MethodName": "enterDetailsAndActivate",
@@ -7721,19 +7882,8 @@
         "Type": "string",
         "Description": "IP Address"
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }]
+      "responses": [],
+      "errorCodes": []
     }]
   }, {
     "name": "public/core/service/",
@@ -7779,20 +7929,14 @@
         "Default": "",
         "Type": "string",
         "Description": ""
+      }, {
+        "Name": "condense",
+        "Required": "N",
+        "Default": "",
+        "Type": "string",
+        "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "servicePackCode",
         "Type": "string",
         "Description": ""
@@ -7843,6 +7987,16 @@
       }, {
         "Name": "prefix",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "countryNotFound",
+        "Description": ""
+      }, {
+        "Name": "noServicePackForCountry",
         "Description": ""
       }]
     }]
@@ -7916,18 +8070,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "sipUsername",
         "Type": "string",
         "Description": ""
@@ -7938,6 +8080,22 @@
       }, {
         "Name": "domain",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "nameTooLong",
+        "Description": ""
+      }, {
+        "Name": "invalidUserSubscriptionId",
+        "Description": ""
+      }, {
+        "Name": "invalidPersonalSipUsername",
+        "Description": ""
+      }, {
+        "Name": "invalidSipDomain",
+        "Description": ""
+      }, {
+        "Name": "sipUsernameTooLong",
         "Description": ""
       }]
     }, {
@@ -8043,18 +8201,40 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "invalidSipUsername",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "numberNotAssigned",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "nameTooLong",
+        "Description": ""
+      }, {
+        "Name": "callerIdInvalid",
+        "Description": ""
+      }, {
+        "Name": "settingsNotExist",
+        "Description": ""
+      }, {
+        "Name": "invalidSipAccountStatus",
+        "Description": ""
+      }, {
+        "Name": "invalidSipDomain",
+        "Description": ""
+      }, {
+        "Name": "notAssignedToUser",
+        "Description": ""
+      }, {
+        "Name": "sipUsernameExists",
+        "Description": ""
+      }, {
+        "Name": "sipPasswordTooLong",
+        "Description": ""
+      }, {
+        "Name": "sipUsernameTooLong",
+        "Description": ""
       }]
     }, {
       "MethodName": "resetPassword",
@@ -8112,20 +8292,21 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "sipPassword",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "invalidSipUsername",
+        "Description": ""
+      }, {
+        "Name": "invalidSipDomain",
+        "Description": ""
+      }, {
+        "Name": "notAssignedToUser",
+        "Description": ""
+      }, {
+        "Name": "sipUsernameTooLong",
         "Description": ""
       }]
     }, {
@@ -8184,18 +8365,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "sipUsername",
         "Type": "string",
         "Description": ""
@@ -8236,8 +8405,21 @@
         "Type": "string",
         "Description": ""
       }, {
-        "Name": "UserSubscriptionId",
+        "Name": "userSubscriptionId",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "invalidSipUsername",
+        "Description": ""
+      }, {
+        "Name": "invalidSipDomain",
+        "Description": ""
+      }, {
+        "Name": "notAssignedToUser",
+        "Description": ""
+      }, {
+        "Name": "sipUsernameTooLong",
         "Description": ""
       }]
     }, {
@@ -8296,20 +8478,15 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "sipUsername",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "invalidSipUsername",
+        "Description": ""
+      }, {
+        "Name": "invalidSipDomain",
         "Description": ""
       }]
     }, {
@@ -8356,18 +8533,6 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "sipAccounts",
         "Type": "string",
         "Description": ""
@@ -8375,7 +8540,8 @@
         "Name": "sipAccountsCount",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }]
   }, {
     "name": "public/core/sms/",
@@ -8459,18 +8625,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "smsRate",
         "Type": "string",
         "Description": ""
@@ -8493,6 +8647,52 @@
       }, {
         "Name": "txnRef",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "maxNumOfSmsExceeded",
+        "Description": ""
+      }, {
+        "Name": "insufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "smsServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "serviceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "hasConcurrentTxn",
+        "Description": ""
+      }, {
+        "Name": "destNumInvalid",
+        "Description": ""
+      }, {
+        "Name": "srcNumInvalid",
+        "Description": ""
+      }, {
+        "Name": "msgEmpty",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallDurationNotEnough",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallInsufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "invalidSenderName",
+        "Description": ""
+      }, {
+        "Name": "destNumNotSupported",
+        "Description": ""
+      }, {
+        "Name": "notAllowedForTrial",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }, {
@@ -8557,18 +8757,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "smsRate",
         "Type": "string",
         "Description": ""
@@ -8611,6 +8799,13 @@
       }, {
         "Name": "currencyCode",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "destNumInvalid",
+        "Description": ""
+      }, {
+        "Name": "serviceNotAvailable",
         "Description": ""
       }]
     }]
@@ -8684,18 +8879,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "userSubscriptions",
         "Type": "string",
         "Description": ""
@@ -8750,6 +8933,16 @@
       }, {
         "Name": "assignees",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "serviceCodeNotValid",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }, {
@@ -8807,18 +9000,16 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "userSubscriptionNotFound",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "organizationNotVerified",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "insufficientPrivileges",
+        "Description": ""
       }]
     }, {
       "MethodName": "reenable",
@@ -8875,18 +9066,22 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "userSubscriptionNotFound",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "userSubscriptionStillActive",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "cannotEnableExpiringSubscription",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
       }]
     }, {
       "MethodName": "update",
@@ -8950,24 +9145,25 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "price",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "currencyCode",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userSubscriptionNotFound",
+        "Description": ""
+      }, {
+        "Name": "sameMonthsToExtend",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }, {
@@ -9031,18 +9227,19 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "userSubscriptionNotFound",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "organizationNotVerified",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "userNotInOrganization",
+        "Description": ""
       }]
     }, {
       "MethodName": "editPaymentSettings",
@@ -9093,18 +9290,16 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "paymentGatewayNotValid",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "organizationNotVerified",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "insufficientPrivileges",
+        "Description": ""
       }]
     }, {
       "MethodName": "getPaymentSettings",
@@ -9156,18 +9351,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "displayData",
         "Type": "string",
         "Description": ""
@@ -9182,6 +9365,19 @@
       }, {
         "Name": "currentPaymentGateways",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "paymentSettingsNotFound",
+        "Description": ""
+      }, {
+        "Name": "paymentGatewayNotValid",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }]
@@ -9272,18 +9468,49 @@
         "Type": "boolean",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "paymentGatewayNotAvailable",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "paymentModeNotAvailable",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "paymentModeNotSupported",
+        "Description": ""
+      }, {
+        "Name": "invalidUrl",
+        "Description": ""
+      }, {
+        "Name": "pretopupAlreadyExists",
+        "Description": ""
+      }, {
+        "Name": "paymentNotSuccess",
+        "Description": ""
+      }, {
+        "Name": "paymentNotSuccessCustom",
+        "Description": ""
+      }, {
+        "Name": "paypalPaymentPending",
+        "Description": ""
+      }, {
+        "Name": "subscriptionTxnNotFound",
+        "Description": ""
+      }, {
+        "Name": "subscriptionsAlreadyExpired",
+        "Description": ""
+      }, {
+        "Name": "pendingSubscriptionTxnExists",
+        "Description": ""
+      }, {
+        "Name": "insufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
       }]
     }, {
       "MethodName": "get",
@@ -9335,18 +9562,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "subscriptionTxn",
         "Type": "string",
         "Description": ""
@@ -9390,13 +9605,23 @@
         "Name": "monthsToExtend",
         "Type": "string",
         "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "subscriptionTxnNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
       }]
     }]
   }, {
     "name": "public/core/topup/",
     "methods": [{
       "MethodName": "topup",
-      "Synopsis": "",
+      "Synopsis": "Topup a user's credits",
       "HTTPMethod": "GET",
       "URI": "public/core/topup/topup/json",
       "RequiresOAuth": false,
@@ -9452,13 +9677,19 @@
         "Name": "paymentMode",
         "Required": "Y",
         "Default": "",
-        "Type": "string",
-        "Description": ""
+        "Type": "enumerated",
+        "Description": "",
+        "EnumeratedList": ["otp", "otp_store", "auto"],
+        "EnumeratedDescription": {
+          "otp": "No description",
+          "otp_store": "No description",
+          "auto": "No description"
+        }
       }, {
-        "Name": "creditCardNumber",
+        "Name": "overridePretopup",
         "Required": "N",
         "Default": "",
-        "Type": "string",
+        "Type": "boolean",
         "Description": ""
       }, {
         "Name": "returnUrl",
@@ -9473,19 +9704,13 @@
         "Type": "string",
         "Description": ""
       }, {
-        "Name": "overridePretopup",
-        "Required": "N",
-        "Default": "",
-        "Type": "string",
-        "Description": ""
-      }, {
         "Name": "stripeToken",
         "Required": "N",
         "Default": "",
         "Type": "string",
         "Description": ""
       }, {
-        "Name": "mobileos",
+        "Name": "creditCardNumber",
         "Required": "N",
         "Default": "",
         "Type": "string",
@@ -9494,25 +9719,66 @@
         "Name": "amount",
         "Required": "N",
         "Default": "",
-        "Type": "string",
-        "Description": ""
+        "Type": "long",
+        "Description": "Topup amount. Required for Sales Order."
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "salesOrderId",
         "Type": "string",
+        "Description": "Returned when Payment Gateway is Sales Order"
+      }, {
+        "Name": "topupAmount",
+        "Type": "long",
         "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "paymentGatewayNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "paymentModeNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "invalidTopupOption",
+        "Description": ""
+      }, {
+        "Name": "topupLimitReached",
+        "Description": ""
+      }, {
+        "Name": "paymentModeNotSupported",
+        "Description": ""
+      }, {
+        "Name": "creditCardInvalid",
+        "Description": ""
+      }, {
+        "Name": "invalidUrl",
+        "Description": ""
+      }, {
+        "Name": "pretopupAlreadyExists",
+        "Description": ""
+      }, {
+        "Name": "paymentNotSuccess",
+        "Description": ""
+      }, {
+        "Name": "creditCardExpired",
+        "Description": ""
+      }, {
+        "Name": "paymentRejectedByBank",
+        "Description": ""
+      }, {
+        "Name": "paymentAlreadyProcessed",
+        "Description": ""
+      }, {
+        "Name": "invalidPurchasingNumber",
+        "Description": ""
+      }, {
+        "Name": "paypalPaymentPending",
+        "Description": ""
+      }, {
+        "Name": "minAmtNotReached",
+        "Description": "(For Sales Order only) Minimum topup amount has not been reached"
+      }, {
+        "Name": "maxAmtExceeded",
+        "Description": "(For Sales Order only) Maximum topup amount has been exceeded"
       }]
     }, {
       "MethodName": "editAutoTopupSettings",
@@ -9587,18 +9853,34 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "autoTopupNotFound",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "invalidValues",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "topupOptionNotValid",
+        "Description": ""
+      }, {
+        "Name": "topupOptionValueNotValid",
+        "Description": ""
+      }, {
+        "Name": "paymentGatewayNotSelected",
+        "Description": ""
+      }, {
+        "Name": "paymentGatewayNotValid",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
       }]
     }, {
       "MethodName": "deleteAutoTopupSettings",
@@ -9649,18 +9931,22 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "modeInvalid",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "autoTopupNotFound",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
       }]
     }, {
       "MethodName": "getAutoTopupSettings",
@@ -9712,18 +9998,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "lowerLimit",
         "Type": "string",
         "Description": ""
@@ -9758,6 +10032,22 @@
       }, {
         "Name": "paypalEmail",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "autoTopupNotFound",
+        "Description": ""
+      }, {
+        "Name": "paymentGatewayNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }, {
@@ -9810,25 +10100,38 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "paymentGateways",
         "Type": "string",
+        "Description": ""
+      }, {
+        "Name": "paymentGatewayData",
+        "Type": "string",
+        "Description": ""
+      }, {
+        "Name": "name",
+        "Type": "string",
+        "Description": ""
+      }, {
+        "Name": "type",
+        "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "paymentGatewayNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }, {
       "MethodName": "getTopupOptions",
-      "Synopsis": "",
+      "Synopsis": "Retrieve Topup Options",
       "HTTPMethod": "GET",
       "URI": "public/core/topup/getTopupOptions/json",
       "RequiresOAuth": false,
@@ -9882,68 +10185,63 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "topupOption",
-        "Type": "string",
-        "Description": ""
-      }, {
-        "Name": "uuid",
-        "Type": "string",
-        "Description": ""
-      }, {
-        "Name": "bonus",
-        "Type": "string",
-        "Description": ""
-      }, {
-        "Name": "bonusDetail",
-        "Type": "string",
-        "Description": ""
-      }, {
-        "Name": "value",
-        "Type": "string",
-        "Description": ""
-      }, {
-        "Name": "valueDetail",
-        "Type": "string",
-        "Description": ""
-      }, {
-        "Name": "price",
-        "Type": "string",
-        "Description": ""
-      }, {
-        "Name": "priceDetail",
-        "Type": "string",
-        "Description": ""
-      }, {
-        "Name": "description",
-        "Type": "string",
-        "Description": ""
+        "Type": "nested",
+        "Description": "",
+        "Nested": [{
+          "Name": "uuid",
+          "Type": "string",
+          "Description": "No description"
+        }, {
+          "Name": "bonus",
+          "Type": "string",
+          "Description": "No description"
+        }, {
+          "Name": "bonusDetail",
+          "Type": "jsonobject",
+          "Description": "No description"
+        }, {
+          "Name": "value",
+          "Type": "string",
+          "Description": "No description"
+        }, {
+          "Name": "valueDetail",
+          "Type": "jsonobject",
+          "Description": "No description"
+        }, {
+          "Name": "price",
+          "Type": "string",
+          "Description": "No description"
+        }, {
+          "Name": "priceDetail",
+          "Type": "jsonobject",
+          "Description": "No description"
+        }, {
+          "Name": "description",
+          "Type": "string",
+          "Description": "No description"
+        }]
       }, {
         "Name": "paymentMode",
         "Type": "string",
-        "Description": ""
-      }, {
-        "Name": "bankAccount",
-        "Type": "string",
-        "Description": ""
+        "Description": "CSV list of allowed payment modes for user (otp, otp_store, auto)"
       }, {
         "Name": "minimumAmount",
         "Type": "string",
-        "Description": ""
+        "Description": "Returned when manual payment mode is allowed"
       }, {
         "Name": "maximumAmount",
         "Type": "string",
+        "Description": "Returned when manual payment mode is allowed"
+      }],
+      "errorCodes": [{
+        "Name": "topupOptionNotFound",
+        "Description": ""
+      }, {
+        "Name": "paymentGatewayNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "manualTopupNotAvailable",
         "Description": ""
       }]
     }, {
@@ -9996,18 +10294,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "topupStatus",
         "Type": "string",
         "Description": ""
@@ -10042,6 +10328,25 @@
       }, {
         "Name": "preTopupCurrency",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "preTopupNotFound",
+        "Description": ""
+      }, {
+        "Name": "userNotMatch",
+        "Description": ""
+      }, {
+        "Name": "currencyNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }, {
@@ -10111,18 +10416,31 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "paymentFailed",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "preTopupNotFound",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "internalServerError",
+        "Description": ""
+      }, {
+        "Name": "paymentNotFoundOrAlreadyProcessed",
+        "Description": ""
+      }, {
+        "Name": "currencyNotFound",
+        "Description": ""
+      }, {
+        "Name": "multiplePayPalIDUsage",
+        "Description": ""
+      }, {
+        "Name": "paypalPaymentPending",
+        "Description": ""
+      }, {
+        "Name": "topupWithheld",
+        "Description": ""
       }]
     }]
   }, {
@@ -10171,18 +10489,6 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "fullName",
         "Type": "string",
         "Description": ""
@@ -10221,6 +10527,10 @@
       }, {
         "Name": "receiveInvoice",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "billingDetailsNotFound",
         "Description": ""
       }]
     }, {
@@ -10317,21 +10627,40 @@
         "Name": "receiveInvoice",
         "Required": "N",
         "Default": "",
-        "Type": "string",
+        "Type": "boolean",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "fullNameContainsInvalidChars",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "fullNameIsEmpty",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "fullNameLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "addressLineOneLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "addressLineTwoLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "cityLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "stateLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "zipLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "emailInvalidFormat",
+        "Description": ""
+      }, {
+        "Name": "countryCodeNotValid",
+        "Description": ""
       }]
     }]
   }, {
@@ -10397,18 +10726,37 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "transferServiceNotAvailable",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "amountInvalid",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "destNumInvalid",
+        "Description": ""
+      }, {
+        "Name": "insufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "receiverInsufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "cannotTransferToSelf",
+        "Description": ""
+      }, {
+        "Name": "cannotTransferToDiffCurrency",
+        "Description": ""
+      }, {
+        "Name": "remarksTooLong",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallDurationNotEnough",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallInsufficientCredits",
+        "Description": ""
       }]
     }]
   }, {
@@ -10493,18 +10841,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "talkTime",
         "Type": "string",
         "Description": ""
@@ -10519,6 +10855,55 @@
       }, {
         "Name": "txnRef",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "serviceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "callServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "srcNumInvalid",
+        "Description": ""
+      }, {
+        "Name": "destNumInvalid",
+        "Description": ""
+      }, {
+        "Name": "insufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "srcNumNotSupported",
+        "Description": ""
+      }, {
+        "Name": "destNumNotSupported",
+        "Description": ""
+      }, {
+        "Name": "cannotCallSameNum",
+        "Description": ""
+      }, {
+        "Name": "sourceNumberMustBeRegistered",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallLimitReached",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallDurationNotEnough",
+        "Description": ""
+      }, {
+        "Name": "notAllowedForTrial",
+        "Description": ""
+      }, {
+        "Name": "callerIDInvalid",
+        "Description": ""
+      }, {
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }, {
@@ -10570,18 +10955,13 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "txnRefNotFound",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "txnRefAccessDenied",
+        "Description": ""
       }]
     }, {
       "MethodName": "getRate",
@@ -10651,18 +11031,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "talkTime",
         "Type": "string",
         "Description": ""
@@ -10685,6 +11053,22 @@
       }, {
         "Name": "currencyCode",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "srcNumInvalid",
+        "Description": ""
+      }, {
+        "Name": "destNumInvalid",
+        "Description": ""
+      }, {
+        "Name": "serviceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "cannotCallSameNum",
+        "Description": ""
+      }, {
+        "Name": "currencyNotFound",
         "Description": ""
       }]
     }]
@@ -10751,18 +11135,31 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "destNumInvalid",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "cannotCallSameNum",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "destNumNotRegistered",
+        "Description": ""
+      }, {
+        "Name": "appNotSupported",
+        "Description": ""
+      }, {
+        "Name": "appVersionNotSupported",
+        "Description": ""
+      }, {
+        "Name": "destNumNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "noTokens",
+        "Description": ""
+      }, {
+        "Name": "cannotCompose",
+        "Description": ""
       }]
     }, {
       "MethodName": "notify",
@@ -10825,18 +11222,16 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "noTokens",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "cannotCompose",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "destNumNotRegistered",
+        "Description": ""
       }]
     }]
   }, {
@@ -10885,22 +11280,11 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "appDownloadUrl",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }]
   }, {
     "name": "public/support/balance/",
@@ -10948,20 +11332,18 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "currencyCode",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "currencyNotFound",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
         "Description": ""
       }]
     }]
@@ -11011,22 +11393,11 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "defaultPayer",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "update",
       "Synopsis": "",
@@ -11077,20 +11448,15 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "defaultPayer",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "organizationNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
         "Description": ""
       }]
     }]
@@ -11164,24 +11530,40 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "txnRefs",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "dests",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "destNumInvalid",
+        "Description": ""
+      }, {
+        "Name": "insufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "destNotSupported",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallLimitReached",
+        "Description": ""
+      }, {
+        "Name": "callServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "notAllowedForTrial",
+        "Description": ""
+      }, {
+        "Name": "callerIDInvalid",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
         "Description": ""
       }]
     }, {
@@ -11239,18 +11621,19 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "invalid_action",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "invalid_owner_permission",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "error_txn_ref_invalid",
+        "Description": ""
+      }, {
+        "Name": "moderateServiceUnavailable",
+        "Description": ""
       }]
     }]
   }, {
@@ -11299,18 +11682,6 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contacts_count",
         "Type": "string",
         "Description": ""
@@ -11337,6 +11708,10 @@
       }, {
         "Name": "user_status",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
         "Description": ""
       }]
     }]
@@ -11392,18 +11767,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "feed",
         "Type": "string",
         "Description": ""
@@ -11434,6 +11797,10 @@
       }, {
         "Name": "text",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -11485,19 +11852,8 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }]
+      "responses": [],
+      "errorCodes": []
     }]
   }, {
     "name": "public/support/forgetPassword/",
@@ -11545,24 +11901,31 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "token",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "code",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "phoneNumInvalid",
+        "Description": ""
+      }, {
+        "Name": "userNotFound",
+        "Description": ""
+      }, {
+        "Name": "forgetPasswordRequestNotAllowed",
+        "Description": ""
+      }, {
+        "Name": "retriesExceeded",
+        "Description": ""
+      }, {
+        "Name": "cannotSendSms",
+        "Description": ""
+      }, {
+        "Name": "callFailed",
         "Description": ""
       }]
     }, {
@@ -11608,18 +11971,25 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "tokenInvalid",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "tokenClaimed",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "incorrectCode",
+        "Description": ""
+      }, {
+        "Name": "retriesExceeded",
+        "Description": ""
+      }, {
+        "Name": "tokenExpired",
+        "Description": ""
+      }, {
+        "Name": "phoneNumInvalid",
+        "Description": ""
       }]
     }, {
       "MethodName": "enterPassword",
@@ -11664,18 +12034,31 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "phoneNumInvalid",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "passwordInvalid",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "passwordLengthTooShort",
+        "Description": ""
+      }, {
+        "Name": "passwordLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "passwordIsEmpty",
+        "Description": ""
+      }, {
+        "Name": "tokenInvalid",
+        "Description": ""
+      }, {
+        "Name": "tokenExpired",
+        "Description": ""
+      }, {
+        "Name": "tokenUnverified",
+        "Description": ""
       }]
     }]
   }, {
@@ -11741,18 +12124,22 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "inviteeInvalid",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "inviteeCountryNotAllowed",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "inviteeAlreadyRegistered",
+        "Description": ""
+      }, {
+        "Name": "noMoreInvite",
+        "Description": ""
+      }, {
+        "Name": "serviceNotAvailable",
+        "Description": ""
       }]
     }]
   }, {
@@ -11855,20 +12242,30 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "txnRef",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "destNumInvalid",
+        "Description": ""
+      }, {
+        "Name": "callServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallLimitReached",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallDurationNotEnough",
+        "Description": ""
+      }, {
+        "Name": "callerIDInvalid",
+        "Description": ""
+      }, {
+        "Name": "notAllowedForTrial",
+        "Description": ""
+      }, {
+        "Name": "insufficientCredits",
         "Description": ""
       }]
     }]
@@ -11924,20 +12321,12 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "country",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "subscribeNumberServiceNotAvailableAnywhere",
         "Description": ""
       }]
     }, {
@@ -12032,18 +12421,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "totalCount",
         "Type": "string",
         "Description": ""
@@ -12054,6 +12431,16 @@
       }, {
         "Name": "prefix",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "pickNumberServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "subscribeNumberServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "noNumbersAvailable",
         "Description": ""
       }]
     }, {
@@ -12136,20 +12523,18 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "number",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "pickNumberServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "subscribeNumberServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "noNumbersAvailable",
         "Description": ""
       }]
     }, {
@@ -12201,18 +12586,10 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "numberNotFound",
+        "Description": ""
       }]
     }, {
       "MethodName": "subscribe",
@@ -12293,12 +12670,6 @@
         "Type": "string",
         "Description": ""
       }, {
-        "Name": "sipUsername",
-        "Required": "N",
-        "Default": "",
-        "Type": "string",
-        "Description": ""
-      }, {
         "Name": "remarks",
         "Required": "N",
         "Default": "",
@@ -12312,18 +12683,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "txnId",
         "Type": "string",
         "Description": ""
@@ -12342,6 +12701,46 @@
       }, {
         "Name": "expiry",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "pickNumberServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "subscribeNumberServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "insufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "invalidSubscriptionDuration",
+        "Description": ""
+      }, {
+        "Name": "numbersOwnedExceededAllowable",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallDurationNotEnough",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallInsufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "noNumbersAvailable",
+        "Description": ""
+      }, {
+        "Name": "chosenNumberNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "autoExtendNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "autoExtendNotAvailable_noTopupData",
+        "Description": ""
+      }, {
+        "Name": "invalidSubscriptionDuration_mobile",
+        "Description": ""
+      }, {
+        "Name": "subscribeNumberServiceNotAvailable_mobile",
         "Description": ""
       }]
     }, {
@@ -12406,18 +12805,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "subscriptionRate",
         "Type": "string",
         "Description": ""
@@ -12436,6 +12823,40 @@
       }, {
         "Name": "newExpiry",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "subscribeNumberServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "insufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "invalidSubscriptionDuration",
+        "Description": ""
+      }, {
+        "Name": "invalidSubscriptionDuration_mobile",
+        "Description": ""
+      }, {
+        "Name": "numberNotAssignedToUser",
+        "Description": ""
+      }, {
+        "Name": "currencyNotFound",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallDurationNotEnough",
+        "Description": ""
+      }, {
+        "Name": "concurrentCallInsufficientCredits",
+        "Description": ""
+      }, {
+        "Name": "autoExtendNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "autoExtendNotAvailable_noTopupData",
+        "Description": ""
+      }, {
+        "Name": "cannotExtendNumberUnderSubscription",
         "Description": ""
       }]
     }, {
@@ -12494,18 +12915,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "numbers",
         "Type": "string",
         "Description": ""
@@ -12520,6 +12929,10 @@
       }, {
         "Name": "autoExtendAvailableForUser",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "noNumbersAssignedToUser",
         "Description": ""
       }]
     }, {
@@ -12607,18 +13020,40 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "numberNotAssignedToUser",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "forwardToNumberInvalid",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "noSipAccount",
+        "Description": ""
+      }, {
+        "Name": "serviceUnsupported",
+        "Description": ""
+      }, {
+        "Name": "numberInvalid",
+        "Description": ""
+      }, {
+        "Name": "modeInvalid",
+        "Description": ""
+      }, {
+        "Name": "expiringNumberCannotBeExtended",
+        "Description": ""
+      }, {
+        "Name": "modeNotSupported",
+        "Description": ""
+      }, {
+        "Name": "autoExtendNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "autoExtendNotAvailable_noTopupData",
+        "Description": ""
+      }, {
+        "Name": "cannotUpdateDirectLine",
+        "Description": ""
       }]
     }, {
       "MethodName": "getRate",
@@ -12688,18 +13123,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "subscriptionSingleRate",
         "Type": "string",
         "Description": ""
@@ -12763,6 +13186,13 @@
         "Name": "totalCostFormattedUnit",
         "Type": "string",
         "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "pickNumberServiceNotAvailable",
+        "Description": ""
+      }, {
+        "Name": "subscribeNumberServiceNotAvailable",
+        "Description": ""
       }]
     }, {
       "MethodName": "getSubscriptions",
@@ -12820,18 +13250,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "subscription",
         "Type": "string",
         "Description": ""
@@ -12842,6 +13260,10 @@
       }, {
         "Name": "autoExtendAvailableForUser",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "subscribeNumberServiceNotAvailable",
         "Description": ""
       }]
     }, {
@@ -12887,19 +13309,8 @@
         "Type": "string",
         "Description": "IP Address"
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }]
+      "responses": [],
+      "errorCodes": []
     }]
   }, {
     "name": "public/support/phone/pushdevice/",
@@ -12964,18 +13375,10 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "osNotSupported",
+        "Description": ""
       }]
     }, {
       "MethodName": "delete",
@@ -13032,18 +13435,13 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "osNotSupported",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "userNoLiveProfile",
+        "Description": ""
       }]
     }, {
       "MethodName": "update",
@@ -13112,18 +13510,13 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "osNotSupported",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "userNoLiveProfile",
+        "Description": ""
       }]
     }]
   }, {
@@ -13196,18 +13589,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contactAddStatus_i",
         "Type": "string",
         "Description": ""
@@ -13230,6 +13611,28 @@
       }, {
         "Name": "contactId",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "internalServerError",
+        "Description": ""
+      }, {
+        "Name": "contactPhoneNumberExists",
+        "Description": ""
+      }, {
+        "Name": "contactPhoneNumberInvalid",
+        "Description": ""
+      }, {
+        "Name": "fullNameEmpty",
+        "Description": ""
+      }, {
+        "Name": "noContactProvided",
+        "Description": ""
+      }, {
+        "Name": "invalidDate",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -13294,18 +13697,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contactDeleteErrorMsg_i",
         "Type": "string",
         "Description": ""
@@ -13320,6 +13711,22 @@
       }, {
         "Name": "latestVersion",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "contactDoesNotExist",
+        "Description": ""
+      }, {
+        "Name": "missingContactIdentifier",
+        "Description": ""
+      }, {
+        "Name": "contactNotExists",
+        "Description": ""
+      }, {
+        "Name": "deleteBlocked",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -13396,18 +13803,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "latestVersion",
         "Type": "string",
         "Description": ""
@@ -13422,6 +13817,52 @@
       }, {
         "Name": "numOfContactsEdited",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "oldContactPhoneNumberInvalid",
+        "Description": ""
+      }, {
+        "Name": "newContactIsEmpty",
+        "Description": ""
+      }, {
+        "Name": "contactPhoneNumberInvalid",
+        "Description": ""
+      }, {
+        "Name": "fullNameEmpty",
+        "Description": ""
+      }, {
+        "Name": "contactDoesNotExist",
+        "Description": ""
+      }, {
+        "Name": "noContactProvided",
+        "Description": ""
+      }, {
+        "Name": "contactUnidentifiable",
+        "Description": ""
+      }, {
+        "Name": "editBlocked",
+        "Description": ""
+      }, {
+        "Name": "internalServerError",
+        "Description": ""
+      }, {
+        "Name": "cannotFindContact",
+        "Description": ""
+      }, {
+        "Name": "contactIsNotAllowedToEdit",
+        "Description": ""
+      }, {
+        "Name": "missingContactIdentifier",
+        "Description": ""
+      }, {
+        "Name": "noResult",
+        "Description": ""
+      }, {
+        "Name": "invalidDate",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -13492,24 +13933,31 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contacts",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "latestVersion",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "internalServerError",
+        "Description": ""
+      }, {
+        "Name": "invalidLimit",
+        "Description": ""
+      }, {
+        "Name": "invalidVersion",
+        "Description": ""
+      }, {
+        "Name": "invalidFirstResult",
+        "Description": ""
+      }, {
+        "Name": "invalidSearchQuery",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
         "Description": ""
       }]
     }, {
@@ -13568,18 +14016,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "contactAddStatus_i",
         "Type": "string",
         "Description": ""
@@ -13594,6 +14030,31 @@
       }, {
         "Name": "latestVersion",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "contactPhoneNumberInvalid",
+        "Description": ""
+      }, {
+        "Name": "contactPhoneNumberExists",
+        "Description": ""
+      }, {
+        "Name": "fullNameEmpty",
+        "Description": ""
+      }, {
+        "Name": "internalServerError",
+        "Description": ""
+      }, {
+        "Name": "uploadInProgress",
+        "Description": ""
+      }, {
+        "Name": "errorNoContactProvided",
+        "Description": ""
+      }, {
+        "Name": "invalidDate",
+        "Description": ""
+      }, {
+        "Name": "userNotLive",
         "Description": ""
       }]
     }]
@@ -13648,18 +14109,10 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "hasConcurrentTxn",
+        "Description": ""
       }]
     }, {
       "MethodName": "getCallerIDs",
@@ -13705,18 +14158,6 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "description",
         "Type": "string",
         "Description": ""
@@ -13728,7 +14169,8 @@
         "Name": "callerID",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "getCallerIDSettings",
       "Synopsis": "",
@@ -13773,18 +14215,6 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "settings",
         "Type": "string",
         "Description": ""
@@ -13796,7 +14226,8 @@
         "Name": "callerID",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "updateCallerIDSettings",
       "Synopsis": "",
@@ -13852,19 +14283,8 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }]
+      "responses": [],
+      "errorCodes": []
     }, {
       "MethodName": "get",
       "Synopsis": "",
@@ -13909,18 +14329,6 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "addressLineOne",
         "Type": "string",
         "Description": ""
@@ -13972,7 +14380,8 @@
         "Name": "unverifiedEmail",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "cancelEmailVerification",
       "Synopsis": "",
@@ -14022,18 +14431,16 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "emailNotFound",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "cannotCancelActiveEmail",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "emailAlreadyVerified",
+        "Description": ""
       }]
     }, {
       "MethodName": "update",
@@ -14151,24 +14558,58 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "fullName",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "email",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "passwordIsEmpty",
+        "Description": ""
+      }, {
+        "Name": "passwordIsTooLong",
+        "Description": ""
+      }, {
+        "Name": "passwordIsTooShort",
+        "Description": ""
+      }, {
+        "Name": "fullNameContainsInvalidChars",
+        "Description": ""
+      }, {
+        "Name": "fullNameIsEmpty",
+        "Description": ""
+      }, {
+        "Name": "fullNameLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "addressLineOneLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "addressLineTwoLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "cityLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "stateLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "zipLengthTooLong",
+        "Description": ""
+      }, {
+        "Name": "emailInvalidFormat",
+        "Description": ""
+      }, {
+        "Name": "callerIDInvalid",
+        "Description": ""
+      }, {
+        "Name": "languageInvalid",
+        "Description": ""
+      }, {
+        "Name": "timezoneInvalid",
         "Description": ""
       }]
     }, {
@@ -14196,18 +14637,22 @@
         "Type": "string",
         "Description": "IP Address"
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "accountAlreadyExists",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "userUnauthorized",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "userSuspended",
+        "Description": ""
+      }, {
+        "Name": "emptyLogin",
+        "Description": ""
+      }, {
+        "Name": "developerAccountNotFound",
+        "Description": ""
       }]
     }, {
       "MethodName": "activateDeveloper",
@@ -14234,18 +14679,22 @@
         "Type": "string",
         "Description": "IP Address"
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "accountAlreadyExists",
+        "Description": ""
       }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
+        "Name": "userUnauthorized",
+        "Description": ""
       }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+        "Name": "userSuspended",
+        "Description": ""
+      }, {
+        "Name": "emptyLogin",
+        "Description": ""
+      }, {
+        "Name": "personalAccountNotFound",
+        "Description": ""
       }]
     }, {
       "MethodName": "createEmailVerificationToken",
@@ -14296,18 +14745,10 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
+      "responses": [],
+      "errorCodes": [{
+        "Name": "emailInvalidFormat",
+        "Description": ""
       }]
     }]
   }, {
@@ -14362,24 +14803,16 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "latestVersion",
         "Type": "string",
         "Description": ""
       }, {
         "Name": "provisionings",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "invalidProvisioningVersion",
         "Description": ""
       }]
     }]
@@ -14429,20 +14862,12 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "email",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "emailRequiredException",
         "Description": ""
       }]
     }]
@@ -14492,18 +14917,6 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "servicesCount",
         "Type": "string",
         "Description": ""
@@ -14523,7 +14936,8 @@
         "Name": "subscribable",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "getRates",
       "Synopsis": "",
@@ -14580,18 +14994,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "ratesCount",
         "Type": "string",
         "Description": ""
@@ -14623,7 +15025,8 @@
         "Name": "countryCode",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "getFullRates",
       "Synopsis": "",
@@ -14686,18 +15089,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "ratesCount",
         "Type": "string",
         "Description": ""
@@ -14740,6 +15131,10 @@
       }, {
         "Name": "status",
         "Type": "string",
+        "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "invalidVersion",
         "Description": ""
       }]
     }]
@@ -14789,22 +15184,11 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "settings",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "update",
       "Synopsis": "",
@@ -14866,19 +15250,8 @@
         "Type": "string",
         "Description": ""
       }],
-      "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }]
+      "responses": [],
+      "errorCodes": []
     }]
   }, {
     "name": "public/support/system/",
@@ -14908,18 +15281,6 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "countriesCount",
         "Type": "string",
         "Description": ""
@@ -14971,7 +15332,8 @@
         "Name": "currencyCode",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "getLanguages",
       "Synopsis": "",
@@ -14998,18 +15360,6 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "languagesCount",
         "Type": "string",
         "Description": ""
@@ -15025,7 +15375,8 @@
         "Name": "name",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "getTimezones",
       "Synopsis": "",
@@ -15052,18 +15403,6 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "timezonesCount",
         "Type": "string",
         "Description": ""
@@ -15083,7 +15422,8 @@
         "Name": "countryCode",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "getAnnouncements",
       "Synopsis": "",
@@ -15134,18 +15474,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "message",
         "Type": "string",
         "Description": ""
@@ -15161,7 +15489,8 @@
         "Name": "announcements",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }]
   }, {
     "name": "public/support/transaction/",
@@ -15251,18 +15580,6 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "totalCount",
         "Type": "string",
         "Description": ""
@@ -15354,6 +15671,25 @@
         "Name": "payeeId",
         "Type": "string",
         "Description": ""
+      }],
+      "errorCodes": [{
+        "Name": "invalidDateFormat",
+        "Description": ""
+      }, {
+        "Name": "invalidPageNumber",
+        "Description": ""
+      }, {
+        "Name": "unknownType",
+        "Description": ""
+      }, {
+        "Name": "currencyNotFound",
+        "Description": ""
+      }, {
+        "Name": "organizationNotVerified",
+        "Description": ""
+      }, {
+        "Name": "insufficientPrivileges",
+        "Description": ""
       }]
     }]
   }, {
@@ -15402,22 +15738,11 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "isTrial",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "filterContacts",
       "Synopsis": "",
@@ -15468,22 +15793,11 @@
         "Description": ""
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "hoiioContacts",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }, {
       "MethodName": "getActivated",
       "Synopsis": "",
@@ -15528,22 +15842,11 @@
         "Description": "IP Address"
       }],
       "responses": [{
-        "Name": "status",
-        "Type": "string",
-        "Description": "Status (OK, fail, warning)"
-      }, {
-        "Name": "errorCode",
-        "Type": "string",
-        "Description": "Error Code"
-      }, {
-        "Name": "msg",
-        "Type": "string",
-        "Description": "Short description of API result"
-      }, {
         "Name": "hoiioContacts",
         "Type": "string",
         "Description": ""
-      }]
+      }],
+      "errorCodes": []
     }]
   }]
 }
