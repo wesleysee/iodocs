@@ -53,14 +53,15 @@ div(id='controls')
         li
             a#toggle-methods(href='#') Toggle All Methods
 
-br
-div
-    form#hoiioCred        
-        input(name='mobileNum', style='margin-left: 15px; width: 200px', placeholder='mobileNum')
-        input(name='password', style='margin-left: 15px; width: 200px', placeholder='password')
-        input(name='orgId', style='margin-left: 15px; width: 200px', placeholder='orgId')
-        input(name='Set', value='Set', type='submit', style='margin-left: 15px')
-br
+- if (apiInfo.requiresAuth == 'true') 
+    br
+    div
+        form#hoiioCred        
+            input(name='mobileNum', style='margin-left: 15px; width: 200px', placeholder='mobileNum')
+            input(name='password', style='margin-left: 15px; width: 200px', placeholder='password')
+            input(name='orgId', style='margin-left: 15px; width: 200px', placeholder='orgId')
+            input(name='Set', value='Set', type='submit', style='margin-left: 15px')
+    br
 
 ul
     - each endpoint in apiDefinition.endpoints

@@ -1,6 +1,15 @@
 {
     "webpublic": {
-        "name": "Hoiio Web API",
+        "name": "Hoiio Web API (Public)",
+        "protocol": "http",
+        "baseURL": "uat.hoiio.com",
+        "publicPath": "/",
+		"booleanTrueVal": "true",
+		"booleanFalseVal": "false",
+        "requiresAuth": "true"
+    },
+    "webprivate": {
+        "name": "Hoiio Web API (Private)",
         "protocol": "http",
         "baseURL": "uat.hoiio.com",
         "publicPath": "/",
